@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url("LoginBackg.jpeg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size:270px 380px;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.P{
+    font-family:"Lucida Handwriting";
+      font-size: 37px;
+      margin-top: 30px;
+      margin-left: 600px;   
+    }
+
+.button{
+    font-family:"Monaco";
+    font-size: 20px;
+    margin-left: 400px;
+    border-radius: 5px;
+    background-color: #087bc7;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 9%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.contents {
+  padding: 15px;
+  margin-top: 20px;
+  height: 475px;
+  width: 800px;
+}
+.lable{
+  font-family:"Lucida Handwriting";
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 500px) {
+  body{background-image: url("LoginBackg.jpeg");
+  background-position:75% 70%;
+  background-repeat: no-repeat;
+  background-size:140px 230px;
+  /*background-attachment: fixed;}*/
+}
+ .P{
+    font-family:"Lucida Handwriting";
+      font-size: 28px;
+      margin-top: 30px;
+      margin-left: 150px;   
+ }
+ form {border: 3px solid #f1f1f1;
+      width: 385px;
+      height: 530px;
+} 
+ .contents {
+  padding: 15px;
+  margin-top: 15px;
+  width: 360px;
+}
+.button{
+    font-family:"Monaco";
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;   
+}
+.lable{
+  font-family:"Lucida Handwriting";
+}
+}
+</style>
+</head>
+<body>
+
+<p class="P">Login </p>
+
+<form action="index1.html" method="post">
+  <div class="contents">
+    <label class="lable"><b>SSID</b></label>
+    <input type="text" placeholder="Enter SSID" name="ssid" required>
+
+    <label class="lable"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required>
+        
+    <button type="submit"class="button"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+  </div>
+</form>
+
+</body>
+</html>
+
